@@ -757,55 +757,42 @@ body.light-mode footer .newsletter-button:hover {
 
 @media (max-width: 768px) {
     header {
-        width: 100%;
-        min-height: 58px;
-        height: auto;
-        padding: 8px 12px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        gap: 10px;
-    }
+    width: 100%;
+    min-height: 58px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
 
-    .logo {
-        display: flex;
-        align-items: center;
-        flex: 0 0 auto;
-    }
+.logo img {
+    width: 80px;
+}
 
-    .logo img {
-        width: 65px;
-        height: auto;
-    }
+nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 0;
+}
 
-    nav {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
-        flex: 1;
-        gap: 12px;
-        margin-left: auto;
-    }
+nav a {
+    font-size: 12px;
+    white-space: nowrap;
+}
 
-    nav a {
-        display: flex;
-        align-items: center;
-        font-size: 14px;
-        white-space: nowrap;
-    }
-
-    header .newsletter-button,
-    header #theme-toggle {
-        height: 32px;
-        padding: 0 8px;
-        font-size: 9px;
-    }
-
-    header .newsletter-button {
-        margin-left: 0;
-    }
+header .newsletter-button,
+header #theme-toggle {
+    height: 32px;
+    padding: 0 10px;
+    font-size: 10px;
+}
 
     /* HERO */
 
@@ -954,51 +941,30 @@ body.light-mode footer .newsletter-button:hover {
 
     /* PRODUCTEN */
 
-    .products {
-        width: 90%;
-        margin: 0 auto;
-        padding: 35px 0;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .products h1,
-    .products h2 {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .products h1 {
-        font-size: 31px;
-    }
-
-    .products h2 {
-        font-size: 21px;
-        margin-bottom: 30px;
-    }
-
     .product-card {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 15px;
-    }
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    padding: 15px;
+}
 
-    .product-card img {
-        width: 85px;
-        height: 85px;
-        flex-shrink: 0;
-    }
+.product-card img {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+}
 
-    .product-card h3 {
-        font-size: 16px;
-    }
+.product-card h3 {
+    font-size: 16px;
+}
 
-    .product-card p {
-        font-size: 11px;
-    }
+.product-card p {
+    font-size: 12px;
+    line-height: 1.5;
+}
 
     /* LOCATIE */
 
